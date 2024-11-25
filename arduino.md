@@ -51,7 +51,9 @@ void loop() {
     ```
     Serial.write('content');  
     // 發送 'content'，content可以是單個位元組、字元陣列或字串
-    ```  
+    ```
+
++ ***Serial.flush() :*** 串列資料清出
   
  
  ---
