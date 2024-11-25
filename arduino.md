@@ -87,4 +87,5 @@ void loop() {
 
 + ***map(value, fromLow, fromHigh, toLow, toHigh) :*** 將一個數值從一個範圍映射到另一個範圍。
 + ***randomSeed(seed) :*** 初始化隨機數產生器。
+    + 預設seed值通常是固定的，更改這個seed是為了確保每次執行時生成的隨機數列不同，從而達到預期的隨機效果。
 + ***random(min, max) :*** 生成一個隨機整數。
