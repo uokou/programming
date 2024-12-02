@@ -14,7 +14,7 @@ pinMode(Button_InPin, INPUT);
 void loop {
 buttonState = digitalRead(Button_InPin);
 // check if the pushbutton is pressed.
-/ if it is, the buttonState is HIGH:
+// if it is, the buttonState is HIGH:
 
 if (buttonState == HIGH) {
 digitalWrite(Ledred _OutPin, HIGH);
