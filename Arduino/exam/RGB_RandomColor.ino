@@ -1,7 +1,7 @@
 const int RLed = 6;
 const int GLed = 9;
 const int BLed = 5;
-long random;
+long randomNumber;
 
 void setup(){
   Serial.begin(9600);
@@ -12,19 +12,22 @@ void setup(){
 }
 
 void loop(){
-  random = rand(0,255)
+  randomNumber = random(0,255);
+  analogWrite(RLed,randomNumber);
   Serial.print("R = ");
-  Serial.print(random);
+  Serial.print(randomNumber);
   Serial.print("\t");
 
-  random = rand(0,255)
+  randomNumber = random(0,255);
+  analogWrite(GLed,randomNumber);
   Serial.print("G = ");
-  Serial.print(random);
+  Serial.print(randomNumber);
   Serial.print("\t");
 
-  random = rand(0,255)
+  randomNumber = random(0,255);
+  analogWrite(BLed,randomNumber);
   Serial.print("B = ");
-  Serial.print(random);
+  Serial.print(randomNumber);
   Serial.print("\n");
 
   delay(500);
