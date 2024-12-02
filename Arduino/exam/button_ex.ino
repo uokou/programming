@@ -1,12 +1,12 @@
 //按下按鈕顯示紅燈，放開則閃爍綠燈10秒
 const int button = 2;
-const int Led_g = 10;
-const int Led_r = 11; 
+const int LED_g = 10;
+const int LED_r = 11; 
 int buttonState, key = 0;
 
 void setup(){
   pinMode(button,INPUT);
-  pinMode(Led_g,OUTPUT);
+  pinMode(LED_g,OUTPUT);
   pinMode(LED_r,OUTPUT);
 }
 
@@ -23,7 +23,7 @@ void loop(){
       for(int i = 0; i<10, i ++){
         digitalWrite(LED_g,HIGH);
         delay(1000);
-        digitalWrite(Led_g,LOW);
+        digitalWrite(LED_g,LOW);
         delay(1000);
       }
     }
